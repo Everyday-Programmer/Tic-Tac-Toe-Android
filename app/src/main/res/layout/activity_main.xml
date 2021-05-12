@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/root">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Player 1: 0"
+        android:id="@+id/tv_p1"
+        android:layout_margin="10sp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_p2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_p1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Player 2: 0"
+        android:layout_margin="10sp"/>
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/reset"
+        app:srcCompat="@drawable/ic_baseline_replay_24"
+        android:tint="@color/black"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_margin="10sp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_centerInParent="true"
+        android:layout_margin="10sp">
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:layout_marginRight="10sp"
+            android:id="@+id/btn_00"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:layout_marginRight="10sp"
+            android:id="@+id/btn_01"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_02"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_10"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_11"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_12"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_20"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_21"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_height="150sp"
+            android:layout_width="100sp"
+            android:freezesText="true"
+            android:id="@+id/btn_22"
+            android:textSize="40sp"/>
+
+    </GridLayout>
+
+</RelativeLayout>
